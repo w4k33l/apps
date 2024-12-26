@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps.Ratta.pk</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"/>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
@@ -524,29 +525,7 @@ form h2 .SocialLinks i:hover{
 }
     </style>
 </head>
-    <script>var swiper = new Swiper(".swiper", {
-    effect: "cube",
-    allowTouchMove: false,
-    grabCursor: false,
-    cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-    },
-    mousewheel: true
-});
-swiper.on('slideChange', function () {
-    for (let i of document.querySelectorAll(".Links li")) i.classList.remove("activeLink")
-    Array.from(document.querySelectorAll(".Links li"))[swiper.activeIndex].classList.add("activeLink")
 
-});
-function Navigate(indx) {
-    for (let i of document.querySelectorAll(".Links li")) i.classList.remove("activeLink")
-    Array.from(document.querySelectorAll(".Links li"))[indx].classList.add("activeLink")
-    swiper.slideTo(indx, 1000, true)
-}
-</script>
 <body>
 
 
@@ -730,6 +709,29 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iure, iste debi
                 </div>
             </div>
     </main>
+    <script>
+        var swiper = new Swiper(".swiper", {
+    effect: "cube",
+    allowTouchMove: false,
+    grabCursor: false,
+    cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+    },
+    mousewheel: true
+});
+swiper.on('slideChange', function () {
+    for (let i of document.querySelectorAll(".Links li")) i.classList.remove("activeLink")
+    Array.from(document.querySelectorAll(".Links li"))[swiper.activeIndex].classList.add("activeLink")
 
+});
+function Navigate(indx) {
+    for (let i of document.querySelectorAll(".Links li")) i.classList.remove("activeLink")
+    Array.from(document.querySelectorAll(".Links li"))[indx].classList.add("activeLink")
+    swiper.slideTo(indx, 1000, true)
+}
+</script>
 </body>
 </html>
