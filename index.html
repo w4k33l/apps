@@ -1,1 +1,136 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Android Apps</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #6200ea;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .app-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .app-card h2 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .app-card p {
+            font-size: 1rem;
+            color: #555;
+            margin: 0 15px 15px;
+        }
+
+        .app-card a {
+            display: inline-block;
+            margin: 10px 0 20px;
+            padding: 10px 20px;
+            color: white;
+            background: #03dac5;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .app-card a:hover {
+            background: #018786;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #6200ea;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Android Apps</h1>
+</header>
+
+<main>
+    <div class="app-grid">
+        <!-- App Card Example -->
+        <div class="app-card">
+            <img src="https://via.placeholder.com/300x200" alt="App Thumbnail">
+            <h2>App Name 1</h2>
+            <p>An amazing app that solves all your problems.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.example.app1" target="_blank">View on Play Store</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://via.placeholder.com/300x200" alt="App Thumbnail">
+            <h2>App Name 2</h2>
+            <p>Another cool app you will absolutely love!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.example.app2" target="_blank">View on Play Store</a>
+        </div>
+
+        <div class="app-card">
+            <img src="https://via.placeholder.com/300x200" alt="App Thumbnail">
+            <h2>App Name 3</h2>
+            <p>Make your life easier with this innovative app.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.example.app3" target="_blank">View on Play Store</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Android Apps Catalog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
